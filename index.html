@@ -132,6 +132,19 @@
     .cost-table .skipped td {
       color: #bbb;
     }
+    tr.done td {
+      color: #999;
+    }
+    tr.done td:first-child::after {
+      content: ' ✅';
+    }
+    tr.now td {
+      background: #eaf7ea !important;
+      font-weight: 700;
+    }
+    tr.now td:first-child::after {
+      content: ' 🔵';
+    }
     details {
       margin-top: 1rem;
     }
@@ -175,7 +188,7 @@
 
 <header>
   <h1>🏯 熊本 観光記録</h1>
-  <div class="subtitle">2026-07-11〜12（1泊2日）📝 計画中</div>
+  <div class="subtitle">2026-07-11〜12（1泊2日）🟢 旅行中</div>
   <div class="meta-chips">
     <span class="chip">✈️ JAL どこかにマイル</span>
     <span class="chip">🏯 熊本城</span>
@@ -196,18 +209,18 @@
       </thead>
       <tbody>
         <tr class="divider"><td colspan="2">— 7/11（土）1日目 —</td></tr>
-        <tr><td>5:13</td><td>京急川崎発（始発・京急蒲田5:16乗換）</td></tr>
-        <tr><td>5:30</td><td>羽田空港第1・第2ターミナル駅着<small>　※保安検査6:00締切に対し余裕30分</small></td></tr>
-        <tr><td>6:20</td><td>羽田発 JAL623（第1ターミナル・普通席）</td></tr>
-        <tr><td>8:00</td><td>阿蘇くまもと空港着</td></tr>
-        <tr><td>8:10頃</td><td>空港リムジンバスで市内へ（桜町BT/通町筋方面・約1時間）</td></tr>
-        <tr><td>9:15頃</td><td>熊本城・市役所前 着<small>　※荷物はそのまま持参 or ホテルに先に預けられるか要確認</small></td></tr>
-        <tr><td>9:30〜11:30</td><td>熊本城 見学（天守閣＋特別見学通路）<small>　※開園9:00・7月は19:00まで（最終入園18:00）</small></td></tr>
-        <tr><td>11:30〜12:30</td><td>桜の馬場 城彩苑で昼食<small>　※候補は下の「🍴 昼食・夕食の候補」参照</small></td></tr>
-        <tr><td>12:30〜13:00</td><td>加藤神社から天守を撮影</td></tr>
-        <tr><td>13:00〜14:00</td><td>市電で水前寺成趣園</td></tr>
-        <tr><td>14:00〜15:00</td><td>鶴屋東館 くまモンスクエア</td></tr>
-        <tr><td>15:00〜</td><td>ホテル日航熊本 チェックイン（熊本市中央区上通町2-1）</td></tr>
+        <tr class="done"><td>5:13</td><td>京急川崎発（始発・京急蒲田5:16乗換）</td></tr>
+        <tr class="done"><td>5:30</td><td>羽田空港第1・第2ターミナル駅着<small>　※保安検査6:00締切に対し余裕30分</small></td></tr>
+        <tr class="done"><td>6:20</td><td>羽田発 JAL623（第1ターミナル・普通席）</td></tr>
+        <tr class="done"><td>8:00</td><td>阿蘇くまもと空港着<small>　※少し空港をぶらぶら</small></td></tr>
+        <tr class="now"><td>8:40発</td><td>空港リムジンバスで市内へ（桜町BT/通町筋方面・約1時間）<small>　※実績、予定より30分押し</small></td></tr>
+        <tr><td>9:45頃</td><td>熊本城・市役所前 着<small>　※荷物はそのまま持参 or ホテルに先に預けられるか要確認</small></td></tr>
+        <tr><td>10:00〜12:00</td><td>熊本城 見学（天守閣＋特別見学通路）<small>　※開園9:00・7月は19:00まで（最終入園18:00）なので余裕あり</small></td></tr>
+        <tr><td>12:00〜13:00</td><td>桜の馬場 城彩苑で昼食<small>　※候補は下の「🍴 昼食・夕食の候補」参照</small></td></tr>
+        <tr><td>13:00〜13:30</td><td>加藤神社から天守を撮影</td></tr>
+        <tr><td>13:30〜14:30</td><td>市電で水前寺成趣園</td></tr>
+        <tr><td>14:30〜15:30</td><td>鶴屋東館 くまモンスクエア</td></tr>
+        <tr><td>15:30〜</td><td>ホテル日航熊本 チェックイン（熊本市中央区上通町2-1）</td></tr>
         <tr><td>18:00〜19:30</td><td>夕飯：馬刺し・郷土料理（下通・上通）<small>　※候補は下の「🍴 昼食・夕食の候補」参照</small></td></tr>
         <tr><td>20:00頃〜</td><td>タクシーで湯らっくすへ（ホテルから約4.1km・15分・片道1,500円前後の見込み）<small>　※24時間営業（10:00〜翌8:00、8〜10時は清掃で入浴不可）</small></td></tr>
         <tr><td>〜23:00頃</td><td>湯らっくすでサウナ・天然温泉<small>　※翌朝の空港移動があるので長居しすぎない</small></td></tr>
